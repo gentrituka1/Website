@@ -6,8 +6,12 @@
   }
 
 :root {
+    --bg: hsl(230, 17%, 14%);
     --padding: 30px 500px;
     --toggle: linear-gradient(hs1(210,78%, 56%), hsl(146,68%,55%));
+    --topBGPattern: hsl(232, 19%, 15%);
+    --blueCardBG: hsl (228, 28%, 20%);
+    --text: hsl(0, 0%, 100%);
 }
 
 .dark-mode{
@@ -20,6 +24,32 @@
     border-radius: 30px;
     background: var(--toggle);
     position: absolute;
+    cursor: pointer;
+}
+.ball{
+    width: 1.6em;
+    height: 1.6em;
+    background-color: var(--bg);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -0.3px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+.label::before{
+    content: 'Dark Mode';
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    left: -95px;
+    top: 5px;
+}
+.input-checkbox:checked ~ .ball {
+    transform: translateX(3em);
+}
+.input-checkbox{
+    display: none;
 }
 
   body {

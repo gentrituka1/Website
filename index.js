@@ -1,4 +1,4 @@
-let checkbox = document.querySelector('input-checkbox');
+let checkbox = document.querySelector('checkbox');
 checkbox?.addEventListener('click', checkMode)
 
 function checkMode(){
