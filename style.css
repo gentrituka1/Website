@@ -2,9 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-  body {
     scroll-behavior: smooth;
+  }
+
+:root {
+    --padding: 30px 500px;
+}
+
+  body {
+    
     background-color: #1f2937;
     display: grid;
     grid-template:
@@ -18,22 +24,22 @@
       auto;
   }
   header {
-    padding: 30px;
+    padding: 30px 200px;
     display: grid;
     grid-auto-flow: column;
     color: white;
     font-family: "Helvetica Neue", sans-serif;
   }
   .left-header {
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: start;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
     font-size: 20px;
   }
   .right-header {
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: end;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
   }
   .right-header a {
     cursor: pointer;
@@ -44,10 +50,10 @@
   /* entry section*/
   
   .entry {
-    padding-top: 30px;
+    padding: var(--padding);
     display: grid;
     place-items: center;
-    gap: 10px;
+    gap: 20px;
   }
   .entry img {
     width: 23%;
@@ -76,7 +82,7 @@
   /* info section */
   
   .info {
-    padding: 50px;
+    padding: var(--padding);
     display: grid;
     place-items: center;
     gap: 30px;
@@ -94,6 +100,7 @@
   
   /* skills section */
   .skills {
+    padding: var(--padding);
     display: grid;
     gap: 35px;
     place-items: center;
@@ -114,9 +121,9 @@
   /* repos section */
   
   .repos{
-    padding: 30px;
-      display: grid;
-      justify-items: center;
+    padding: var(--padding);
+    display: grid;
+    justify-items: center;
   }
   .repos h3{
     font-size: 2.5rem;
@@ -129,6 +136,7 @@
     display: grid;
     place-items: center;
     gap: 35px;
+    padding: var(--padding);
   }
   .social-networks h3{
     color: white;
