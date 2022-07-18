@@ -30,3 +30,25 @@ header{
 .right-header a{
     cursor: pointer;
 }
+
+/* entry style */
+
+.entry{
+    padding-top: 30px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.entry img{
+    width: 23%;
+    border-radius: 50%;
+}
+.entry h3{
+    font-size: 1.8rem;
+    color: white;
+}
+.entry h1{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
