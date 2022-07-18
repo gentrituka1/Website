@@ -1,17 +1,20 @@
-let checkbox = document.querySelector('checkbox');
-checkbox?.addEventListener('click', checkMode)
+const checkbox = document.getElementById('checkbox')
+
+checkbox.addEventListener('click',checkMode)
 
 function checkMode(){
-    if (checkbox.checked){
-        darkMode();
-    } else{
-        lightMode();
+    if(checkbox.checked){
+        darkModeOn()
+    }else{
+        darkModeOff()
     }
 }
-function darkMode(){
-    document.body.classList.add('dark-mode');
+
+function darkModeOn(){
+    document.body.classList.add('dark-mode')
 }
-function lightMode(){
-    document.body.classList.remove('dark-mode');
+
+function darkModeOff(){
+    document.body.classList.remove('dark-mode')
 }
 

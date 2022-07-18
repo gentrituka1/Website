@@ -13,31 +13,29 @@
     --blueCardBG: hsl (228, 28%, 20%);
     --text: hsl(0, 0%, 100%);
 }
+/* toggle btn */
 
-.dark-mode{
-    background-color: #1f2937;
-    color:white;
+.toggle{
+    margin-top: -120px;
+    width: 3%;
+}
+
+.darkmode{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--BlueText);
+    display: flex;
+    align-items: center;
 }
 .label{
     width: 5em;
     height: 2em;
     border-radius: 30px;
-    background: var(--toggle);
+    background: var(--Toggle);
     position: absolute;
     cursor: pointer;
 }
-.ball{
-    width: 1.6em;
-    height: 1.6em;
-    background-color: var(--bg);
-    position: absolute;
-    border-radius: 50%;
-    margin-top: -0.3px;
-    margin-left: 3px;
-    cursor: pointer;
-    transition: all 250ms ease-in-out;
-}
-.label::before{
+.label:before{
     content: 'Dark Mode';
     position: absolute;
     display: inline-block;
@@ -45,12 +43,26 @@
     left: -95px;
     top: 5px;
 }
-.input-checkbox:checked ~ .ball {
+#checkbox:checked ~ .ball{
     transform: translateX(3em);
 }
-.input-checkbox{
+#checkbox{
     display: none;
 }
+
+
+.ball{
+    width: 1.6em;
+    height: 1.6em;
+    background-color: var(--BG);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -0.3px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
 
   body {
     height: 100vh;
