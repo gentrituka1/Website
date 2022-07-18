@@ -9,17 +9,17 @@
     <script defer src="/index.js"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="left-header">
             <span>gentrituka.dev</span>
             <input type="checkbox" class="dark-mode">
             <span>Dark Mode</span>
         </div>
         <div class="right-header">
-            <a><span>../home</span></a>
-            <a><span>../about</span></a>
-            <a><span>../projects</span></a>
-            <a><span>../contact</span></a>
+            <a href="#header"><span>../home</span></a>
+            <a href="#info"><span>../about</span></a>
+            <a href="#repos"><span>../projects</span></a>
+            <a href="#socials"><span>../contact</span></a>
             </div>
     </header>
     <section class="entry">
@@ -28,7 +28,7 @@
         <h1>I'm a software engineer and a problem solver;</h1>
         <button>CONNECT WITH ME</button>
     </section>
-    <section class="info">
+    <section class="info" id="info">
         <h3>more about me;</h3>
         <p>"Creative web developer dedicated to building and optimizing web functionality and workflow efficiencies. Experience in designing and developing user interfaces, testing, debugging within web developing technologies. Skilled in PHP, Laravel, jQuery, Graphic Design, and Web Design."</p>
     </section>
@@ -44,7 +44,7 @@
             <img class="wordpress" src="/images/wordpress.png">
         </div>
     </section>
-    <section class="repos">
+    <section class="repos" id="repos">
         <h3>my repositories;</h3>
         <div class="repo-item">
             
@@ -56,13 +56,17 @@
         <div class="repo-item"></div>
         </div>
     </section>
-    <section class="social-networks">
-        <h3>my social</h3>
+    <section class="social-networks" id="socials">
+        <h3>my social networls;</h3>
+        <p>I know they're not really social networks but hey I guess this is one way to contact me!</p>
     </section>
     <footer>
-
+        <div class="footer-nav">
+            <a href="#header"><span>../home</span></a>
+            <a href="#info"><span>../about</span></a>
+            <a href="#repos"><span>../projects</span></a>
+            <a href="#socials"><span>../contact</span></a>
+            </div>
     </footer>
-
-
 </body>
 </html>
