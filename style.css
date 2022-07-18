@@ -202,6 +202,14 @@
     color: white;
     font-size: 1.15rem;
   }
+  .social-networks img{
+    width: 40px;
+  }
+  .socials{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+  }
   
   /* footer section  */
   footer{
