@@ -84,6 +84,7 @@
     grid-auto-flow: column;
     color: white;
     font-family: "Helvetica Neue", sans-serif;
+    position: relative;
   }
   .left-header {
     display: flex;
