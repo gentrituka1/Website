@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1f2937;
+    display: grid;
+    grid-template: 
+    'header'
+}
+header{
+    padding: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+    font-family:'Helvetica Neue', sans-serif;
+}
+.left-header{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: start;
+    font-size: 20px;
+}
+.right-header{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+}
+.right-header a{
+    cursor: pointer;
+}
