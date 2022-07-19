@@ -19,6 +19,8 @@ function darkModeOff(){
 }
 
 
-function toggleMenu(){
-    document.getElementById('menu').classList.toggle('show')
-}
+$(document).ready(function(){
+    $("#menu").click(function(){
+        $("header-right").show();
+    })
+});
