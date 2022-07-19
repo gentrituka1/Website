@@ -13,26 +13,37 @@
     <header id="header">
         <div class="left-header">
             <span>butrinthajrizi.dev</span>
-            <div class="toggle">
-                <div class="darkmode">
-                  <input type="checkbox" class="checkbox" id="checkbox">
-                  <label for="checkbox" class="label"></label>
-                    <div class="ball"></div>
-                  </label>
-                </div>
-              </div>
+            <div id="toggle">
+                <i class="indicator"></i>
+            </div>
+            <script>
+                const body = document.querySelector('body');
+                const toggle = document.getElementById('toggle');
+                const rightHeader = document.querySelector('')
+                toggle.onclick = function(){
+                    toggle.classList.toggle('active')
+                    body.classList.toggle('active')
+                }
+            </script>
         </div>
         <div class="right-header">
             <a href="#header"><span>../home</span></a>
             <a href="#info"><span>../about</span></a>
             <a href="#repos"><span>../projects</span></a>
             <a href="#socials"><span>../contact</span></a>
+            
         </div>
-        <div class="right-header-mobile">
-            <span id="menu" class="material-symbols-outlined menu">
+        <div class="dropdown">
+            <span onclick="myFunction()" class="material-symbols-outlined dropbtn">
                 menu
                 </span>
-        </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#header"><span>../home</span></a>
+                <a href="#info"><span>../about</span></a>
+                <a href="#repos"><span>../projects</span></a>
+                <a href="#socials"><span>../contact</span></a>
+            </div>
+          </div>
     </header>
     <section class="entry">
         <img src="/images/butrintHajrizi.png">
