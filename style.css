@@ -29,6 +29,11 @@
       auto;
       /* transition: 0.5s; */
   }
+
+  @media only screen and (max-width: 600px) {
+    body {font-size: 75%;}
+}
+
   header {
     padding: 30px 200px;
     display: grid;
@@ -87,6 +92,31 @@
 body.active{
   background-color: white;
 }
+
+.active section p{
+  color:#1f2937 !important; 
+}
+
+.active section h1{
+  color:#1f2937 !important; 
+}
+
+.active section h2{
+  color:#1f2937 !important; 
+}
+
+.active section h3{
+  color:#1f2937 !important; 
+}
+
+.active footer a span{
+  color:#1f2937 !important; 
+}
+
+.active header  span{
+  color:#1f2937 !important; 
+}
+
 
 
   .right-header {
