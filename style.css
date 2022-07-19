@@ -87,6 +87,8 @@
 body.active{
   background-color: white;
 }
+
+
   .right-header {
     display: flex;
     justify-content: flex-end;
