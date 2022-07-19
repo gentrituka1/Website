@@ -18,3 +18,7 @@ function darkModeOff(){
     document.body.classList.remove('dark-mode')
 }
 
+
+function toggleMenu(){
+    document.getElementById('menu').classList.toggle('show')
+}

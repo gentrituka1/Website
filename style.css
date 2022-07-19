@@ -98,10 +98,25 @@
     justify-content: flex-end;
     gap: 20px;
   }
+
+  .right-header-mobile{
+    display: none;
+  }
   .right-header a {
     cursor: pointer;
     text-decoration: none;
     color: white;
+  }
+  @media (max-width: 840px) {
+    .right-header {
+      display: none;
+    }
+    .right-header-mobile {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      cursor: pointer;
+    }
   }
   
   /* entry section*/
@@ -155,6 +170,30 @@
   
   /* experience section */
   
+  .experience{
+    display: grid;
+    place-items: center;
+    padding: var(--padding)
+  }
+  .experience h3{
+    color: white;
+    font-size: 2.5rem;
+  }
+  .experience-item{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    color: white;
+    text-align: center;
+  }
+  .experience-item p{
+    font-size: 1.1rem;
+  }
+  .experience-item span{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
   /* skills section */
   .skills {
     padding: var(--padding);
