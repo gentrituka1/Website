@@ -294,14 +294,36 @@ body.active{
     place-items: center;
     gap: 10px;
   }
-  .circle{
+  .html{
     width: 12px;
     height: 12px;
     border-radius: 100%;
-    background-color: orange;
+    background-color: rgb(172, 96, 9);
     display: inline-block;
     top: 1px;
     position: relative;
+  }
+  .js{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: yellow;
+    display: inline-block;
+    top: 1px;
+    position: relative;
+  }
+  .ts{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: royalblue;
+    display: inline-block;
+    top: 1px;
+    position: relative;
+  }
+  .top-of-repo a{
+    text-decoration: none;
+    color: black;
   }
   .bottom-of-repo{
     display: grid;
