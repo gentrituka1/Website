@@ -365,6 +365,12 @@ body.active{
     grid-auto-flow: column;
     grid-gap: 20px;
   }
+  .socials a{
+    transition: all 300ms ease-in-out;
+  }
+  .socials a:hover{
+    transform: scale(1.3);
+  }
   
   /* footer section  */
   footer{
