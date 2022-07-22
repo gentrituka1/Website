@@ -16,12 +16,17 @@
             <div id="toggle">
                 <i class="indicator"></i>
             </div>
+            <p class="dark-mode">Dark Mode</p>
             <script>
                 const body = document.querySelector('body');
                 const toggle = document.getElementById('toggle');
+                toggle.addEventListener('click', () => {
+                    pEl.textContent = pEl.textContent === "Dark Mode" ? "Light Mode" : "Dark Mode"
+                })
                 const header = document.querySelector('header')
                 const rightHeader = document.querySelector('.right-header')
                 const greetings = document.querySelector('.greetings')
+                let pEl = document.querySelector('.dark-mode')
                 toggle.onclick = function(){
                     toggle.classList.toggle('active')
                     body.classList.toggle('active')
@@ -58,7 +63,7 @@
     </section>
     <section class="info" id="info">
         <h3>more about me;</h3>
-        <p>"Creative web developer dedicated to building and optimizing web functionality and workflow efficiencies. Experience in designing and developing user interfaces, testing, debugging within web developing technologies. Skilled in PHP, Laravel, jQuery, Graphic Design, and Web Design."</p>
+        <p>"Creative web developer dedicated to building and optimizing web functionality and workflow efficiencies. Experience in designing and developing user interfaces, testing, debugging within web developing technologies. Skilled in Web Design, Front-end and servers."</p>
     </section>
     <section class="experience">
         <h3>my experiences;</h3>

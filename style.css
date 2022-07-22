@@ -112,8 +112,9 @@ body.active{
 .active header  span{
   color:#1f2937 !important; 
 }
-
-
+.active header p {
+  color:#1f2937 !important; 
+}
 
   .right-header {
     display: flex;
